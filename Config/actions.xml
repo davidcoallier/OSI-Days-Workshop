@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<frapi-config>
+ <actions>
+  <action>
+   <name>Users</name>
+   <enabled>1</enabled>
+   <public>1</public>
+   <description>This is the module that is used to create new users and also list all users on the system. It receives a GET and a POST.</description>
+   <route>/users</route>
+   <hash>4abc0f1aa2efd3bc2519b909d8c9fa737a4f5d6a</hash>
+   <parameters>
+    <parameter>
+     <name>name</name>
+     <required>1</required>
+    </parameter>
+   </parameters>
+  </action>
+  <action>
+   <name>User</name>
+   <enabled>1</enabled>
+   <public>1</public>
+   <description>Get the portfolios and information about a certain user.</description>
+   <route>/users/:user_id</route>
+   <hash>c57be9878c4aef12e1e3248e244c0f7c46281e0d</hash>
+   <parameters>
+    <parameter>
+     <name>user_id</name>
+     <required>1</required>
+    </parameter>
+   </parameters>
+  </action>
+  <action>
+   <name>Userportofolios</name>
+   <enabled>1</enabled>
+   <public>1</public>
+   <description>The users portfolios</description>
+   <route>/users/:user_id/portfolios</route>
+   <hash>004f293b2232dd43646b1af90f6d111405745409</hash>
+   <parameters>
+    <parameter>
+     <name>user_id</name>
+     <required>1</required>
+    </parameter>
+   </parameters>
+  </action>
+  <action>
+   <name>Userportofolio</name>
+   <enabled>1</enabled>
+   <public>1</public>
+   <description>The singular portfolio for a user.</description>
+   <route>/users/:user_id/portfolios/:portfolio_id</route>
+   <hash>e3ef574d29d7879ac2b3bbec70789979315a6356</hash>
+   <parameters>
+    <parameter>
+     <name>user_id</name>
+     <required>1</required>
+    </parameter>
+    <parameter>
+     <name>portfolio_id</name>
+     <required>1</required>
+    </parameter>
+   </parameters>
+  </action>
+ </actions>
+</frapi-config>

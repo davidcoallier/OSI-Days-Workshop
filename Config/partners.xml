@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<frapi-config>
+ <partners>
+  <partner>
+   <firstname>David</firstname>
+   <lastname>Coallier</lastname>
+   <email>david</email>
+   <company>osidays</company>
+   <api_key>780a97b6557b419edfa2b25b8502163be2eeae75</api_key>
+   <hash>6dc234c63ec817df30407e9b9e40ef45b0257b8b</hash>
+  </partner>
+ </partners>
+</frapi-config>
